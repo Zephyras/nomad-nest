@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MoviesController } from './movies/movies.controller';
+import { MoviesService } from './movies/movies.service';
 
 //@Module을 데코레이터라고 칭한다. (클래스에 함수 기능을 추가해줄수걸 말한다.)
 //예시로 아이스크림 위에 초콜릿 칩을 뿌리는것 같다.
@@ -7,6 +8,6 @@ import { MoviesController } from './movies/movies.controller';
 @Module({
   imports: [],
   controllers: [MoviesController],
-  providers: [],
+  providers: [MoviesService],
 })
 export class AppModule {}
