@@ -90,3 +90,7 @@ moviesService라 불리는 property를 만들고 타입을 지정해줘서 그�
 provider가 모든 것들을 import해서 타입을 추가해주는거라서 잘 작동되는거다.
 이부분을 dependency injection이라 불린다.
 즉 provider를 통해 import 하고 Controller한테 inject(주입)을 해주므로 연결이 된다.
+
+테스팅코드
+spec.ts 파일은 테스트코드 작성스크립트이다.
+package.json 안에 jest가 .spec.ts 파일들을 찾아 볼 수 있도록 설정되어 있다.
