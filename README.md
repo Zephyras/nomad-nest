@@ -78,3 +78,15 @@ Nest is [MIT licensed](LICENSE).
 //명령어:
 $ npm i @nestjs/mapped-types
 ```
+
+dependency injection
+movies.controller.ts 를 예시를 들면
+this.moviesService.getAll() 반환되도록 작동되는 이유는
+moviesService라 불리는 property를 만들고 타입을 지정해줘서 그렇다.
+생성자안에 private readonly moviesService의 타입스크립트의 타입형 지정이 없다면 
+작동이 안되고 무언가 import를 해줘야하는 상황이 생긴다.
+
+모듈안에 controllers 와 providers를 설정하는데
+provider가 모든 것들을 import해서 타입을 추가해주는거라서 잘 작동되는거다.
+이부분을 dependency injection이라 불린다.
+즉 provider를 통해 import 하고 Controller한테 inject(주입)을 해주므로 연결이 된다.
