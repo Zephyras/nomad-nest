@@ -71,3 +71,10 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## mapped-types 패키지
+```bash
+# mapped0-types는 타입을 변환시키고 사용할 수 있게 하는 패키지.
+//명령어:
+$ npm i @nestjs/mapped-types
+```
