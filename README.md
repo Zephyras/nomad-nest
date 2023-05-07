@@ -94,3 +94,13 @@ provider가 모든 것들을 import해서 타입을 추가해주는거라서 잘
 테스팅코드
 spec.ts 파일은 테스트코드 작성스크립트이다.
 package.json 안에 jest가 .spec.ts 파일들을 찾아 볼 수 있도록 설정되어 있다.
+
+#test hook 
+beforeAll(fn, timeout)
+모든 테스트가 실행되기 전에 딱 한 번 함수를 실행합니다.
+
+afterEach(fn, timeout)
+각각의 테스트가 완료된 후 함수를 실행합니다.
+
+afterAll(fn, timeout)
+모든 테스트가 완료된 후 함수를 실행합니다.
