@@ -104,3 +104,7 @@ afterEach(fn, timeout)
 
 afterAll(fn, timeout)
 모든 테스트가 완료된 후 함수를 실행합니다.
+
+e2e 테스트 작업
+명령어
+npm run test:e2e

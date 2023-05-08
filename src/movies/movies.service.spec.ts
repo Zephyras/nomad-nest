@@ -1,7 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { MoviesService } from './movies.service';
 import { NotFoundException } from '@nestjs/common';
-import exp from 'constants';
 
 //describe 말하다 묘사하다 테스트를 묘사하단다는 의미
 describe('MoviesService', () => {
